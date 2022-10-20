@@ -1,0 +1,31 @@
+<h2>Hesablamaya uyğun nəticə </h2>
+
+<div class="table" style="display: flex;width: 220px;">
+  <table style="text-align: center;">
+    <tr>
+      <th>Giriş dəyəri</th>
+    </tr>
+    {% for i in value %}
+    <tr>
+      <td >{{i}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <hr>
+  <table style="text-align: center;">
+    <tr>
+      <th>Çəki dəyəri</th>
+    </tr>
+    {% for j in weight %}
+    <tr>
+      <td >{{j}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+<hr>
+<div class="output">
+  <div style="display: flex; align-items: center;height: 10px;">Gate : <p style="font-weight: bold;">{{gate}}</p></div>
+  <br>
+  <div style="display: flex; align-items: center;height: 10px;">Çıxış qiyməti : <p style="font-weight: bold;">{{result}}</p></div>
+</div>
