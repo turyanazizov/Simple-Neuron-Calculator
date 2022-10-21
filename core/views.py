@@ -38,10 +38,13 @@ def index(request):
             if sum_of_weight==sum:
                 result = 1
 
-        if gate=='xor':
-            if sum_of_value%sum==0:
-                result = 1
+        if gate=='nor':
+            if sum>0:
+                result = 0
 
+        if gate=='nand':
+            if sum_of_weight==sum:
+                result = 0
 
         # request.POST['result']=result
         context={
